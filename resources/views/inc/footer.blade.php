@@ -1,0 +1,28 @@
+<footer id="footer">
+    <section>
+        <span class="image"><img src="http://ctcaesguia.test/img/etiqueta_rodape2.png" alt="image" /></span>
+        <p>Instituto Federal de Educação, Ciência e Tecnologia Catarinense - Campus Camboriú</p>
+
+        <ul class="actions">
+            <li><a href="http://www.camboriu.ifc.edu.br/" class="button">Veja mais</a></li>
+        </ul>
+    </section>
+    <section>
+        <dl class="alt">
+            <dt>Endereço</dt>
+            <dd>Rua: Joaquim Garcia, s/c &bull; Caixa Postal nº 2016 &bull; CEP 88340-055 &bull; Camboriú - SC</dd>
+            <dt>Telefone</dt>
+            <dd>(47) 2104-0800</dd>
+            <dt>Email</dt>
+            <dd>gabinete.camboriu@ifc.edu.br</dd>
+        </dl>
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+        </ul>
+    </section>
+    <p class="copyright">&copy; CGI - Campus Camboriú. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+</footer>

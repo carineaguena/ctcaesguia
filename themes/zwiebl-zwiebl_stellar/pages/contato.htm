@@ -1,0 +1,41 @@
+title = "Contato"
+url = "/contato"
+layout = "generic"
+is_hidden = 0
+==
+<section>
+    <h2>Contato</h2>
+    Form::open(['url' => 'contato/submit'])
+    <form>
+        <div class="row uniform">
+            <div class="6u 12u$(xsmall)">
+                <input type="text" name="name" id="name" placeholder="Nome" />
+            </div>
+            <div class="6u$ 12u$(xsmall)">
+                <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="12u$">
+                <div class="select-wrapper">
+                    <select name="motivo" id="motivo">
+                        <option value="">- Motivo para o contato -</option>
+                        <option value="Elogio">Elogio</option>
+                        <option value="Reclamação">Reclamação</option>
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="12u$">
+                <textarea name="message" id="message" placeholder="Escreva sua mensagem" rows="6"></textarea>
+            </div>
+            <div class="12u$">
+                <ul class="actions">
+                    <li><input type="submit" value="Enviar" class="special" /></li>
+                    <li><input type="reset" value="Limpar" /></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+  Form::close()
+</section>
