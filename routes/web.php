@@ -34,3 +34,7 @@ Route::get('/contato', function () {
 Route::post('/contact/submit', 'MessagesController@submit');
 
 Route::post('/familias/submit', 'MessagesController@register');
+
+Route::get('/familias','MessagesController@getState');
+
+//Route::get('/familias{state_id}', 'MessagesController@getCidades');

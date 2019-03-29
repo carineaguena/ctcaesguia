@@ -1,4 +1,16 @@
 @extends('layouts.app')
+@section('scripts')
+    <script>
+
+      $('.estado').on('click', function(){
+
+      });
+
+        $(document).ready(function() {
+            $('estado').material_select();
+        });
+    </script>
+@endsection
 
 @section('content')
 
@@ -51,23 +63,19 @@
 
 
                 <div class="12u$">
-                  {!!  Form::select('estado',['placeholder' => '- Estado -',
-                          'AC' => 'Acre',
-                          'AL' => 'Alagoas',
 
-                        ],
-                        ['class' => 'form-control']
-                      ); !!}
+                  {!! Form::select('estado', $estados, 'id', [
+                    'class' => 'form-control',
+                    'placeholder' => 'Escolha o seu estado',
+                    'id' => 'estado-select'
+                    ]) !!}
                 </div>
 
-                <div class="12u$">
-                  {!!  Form::select('cidade',['placeholder' => '- Cidade -',
-                          'AC' => 'Acre',
-                          'AL' => 'Alagoas',
 
-                        ],
-                        ['class' => 'form-control']
-                      ); !!}
+
+                <div class="12u$">
+                    {!! Form::select('cidade', $cidades, null, ['class' => 'form-control']) !!}
+
                 </div>
 
                 <div class="6u$">

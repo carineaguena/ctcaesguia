@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Message;
 use App\Register;
+use App\State;
+use App\City;
 
 class MessagesController extends Controller
 {
@@ -65,4 +67,23 @@ class MessagesController extends Controller
 
     return redirect('/')->with('success', 'Cadastro Enviado.');
   }
+
+  public function getState(Request $request){
+    $estados = State::pluck('name', 'id');
+    $cidades = City::pluck('name', 'state_id');
+    //$selectValue = $request->get('estado');
+    $cidades = City::where('state_id', $request)->pluck('name', 'id');
+
+    return view('familias', compact('estados', 'cidades'));
+  }
+
+  public function getCidades(Request $request){
+    //$estado = $this->stateModel->findOrFail(13);
+  //  $cidades = $estado->cidades()->getQuery()->get(['id', 'cidade']);
+    //return Response::json($cidades);
+    //$cidades = Cities::pluck('name', 'state_id');
+    $cidades = City::where('state_id', $request)->pluck('name', 'id');
+    return view('familias', compact('cidades'));
+  }
+
 }
