@@ -49,7 +49,6 @@
                     {{Form::text('celular', '', ['class' => 'form-control', 'placeholder' => 'Celular'])}}
                 </div>
 
-
                 <div class="12u$">
 
                     <div class="form-group">
@@ -73,6 +72,7 @@
                     </div>
 
                 </div>
+
 
                 <div class="6u$">
                   {!!  Form::select('residencia',['placeholder' => 'Sua residência é:',
@@ -107,21 +107,18 @@
                     type:"GET",
                     url:"{{url('api/get-city-list')}}?state_id="+id,
                     success:function(res){
-                        alert("res");
                         if(res){
                             $("#cities").empty();
                             $.each(res,function(key,value){
-                                $("#cities").append('<option value="'+key+'">'+value+'</option>');
+                                $("#cities").append('<option value="'+value+'">'+key+'</option>');
                             });
 
                         }else{
-                            alert("primeiro else");
                             $("#cities").empty();
                         }
                     }
                 });
             }else{
-                alert("segundo else");
                 $("#cities").empty();
             }
 

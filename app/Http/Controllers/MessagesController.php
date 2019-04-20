@@ -60,7 +60,7 @@ class MessagesController extends Controller
     $register->endereco = $request->input('endereco', 'numero');
     $register->telefone = $request->input('telefone', 'celular');
     $register->estado = $request->input('estado');
-    $register->cidade = $request->input('cidade');
+    $register->cidade = $request->input('cities');
     $register->residencia = $request->input('residencia');
     $register->mensagem = $request->input('message');
 
@@ -80,24 +80,16 @@ class MessagesController extends Controller
     return view('familias', compact('estados', 'cidades'));
   }
 
-    public function getCidades()
-    {
-        $ufs = Request::get('id');
-
-        $cidades = DB::table('cities')
-            ->whereIn('id', $ufs)
-            ->get();
-
-        return Response::json($cidades);
-    }
 
     public function getCityList(Request $request)
     {
+
         $cities = DB::table("cities")
-            ->where("state_id",$request->state_id)
-            ->lists("name","id");
+            ->where("state_id", $request->state_id)
+            ->pluck('id', 'name');
 
         return response()->json($cities);
+
     }
 
 

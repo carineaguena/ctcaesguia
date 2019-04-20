@@ -43,6 +43,6 @@ Route::get('/familias','MessagesController@getState');
 
 Route::get('/get-cidades', 'MessagesController@getCidades');
 
-Route::get('/api/get-city-list','MessagesController@getCityList');
+Route::get('api/get-city-list','MessagesController@getCityList');
 
 //Route::get('/familias{state_id}', 'MessagesController@getCidades');
