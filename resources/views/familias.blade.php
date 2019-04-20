@@ -1,19 +1,7 @@
 @extends('layouts.app')
-@section('scripts')
-    <script>
 
-      $('.estado').on('click', function(){
-
-      });
-
-        $(document).ready(function() {
-            $('estado').material_select();
-        });
-    </script>
-@endsection
 
 @section('content')
-
 
     <section id="content" class="main">
       <h2>Famílias Socializadoras</h2>
@@ -64,17 +52,25 @@
 
                 <div class="12u$">
 
-                  {!! Form::select('estado', $estados, 'id', [
-                    'class' => 'form-control',
-                    'placeholder' => 'Escolha o seu estado',
-                    'id' => 'estado-select'
-                    ]) !!}
+                    <div class="form-group">
+
+                        <select name="estado" id="estado" class="form-control" onchange='city(this.value)'>
+                            <option value="">Selecione o estado</option>
+                            @foreach($estados as $estado)
+                                <option value="{{$estado->id}}">{{$estado->name}}</option>
+                            @endforeach
+                        </select>
+                    </div>
                 </div>
 
 
 
                 <div class="12u$">
-                    {!! Form::select('cidade', $cidades, null, ['class' => 'form-control']) !!}
+
+                    <div class="form-group">
+                        <select name="cities" id="cities" class="form-control">
+                        </select>
+                    </div>
 
                 </div>
 
@@ -98,5 +94,41 @@
             </div>
       {!! Form::close() !!}
       </section>
+
+    <script src="http://demo.expertphp.in/js/jquery.js"></script>
+
+    <script>
+
+        function city(id){
+
+            if(id){
+               //alert(id);
+                $.ajax({
+                    type:"GET",
+                    url:"{{url('api/get-city-list')}}?state_id="+id,
+                    success:function(res){
+                        alert("res");
+                        if(res){
+                            $("#cities").empty();
+                            $.each(res,function(key,value){
+                                $("#cities").append('<option value="'+key+'">'+value+'</option>');
+                            });
+
+                        }else{
+                            alert("primeiro else");
+                            $("#cities").empty();
+                        }
+                    }
+                });
+            }else{
+                alert("segundo else");
+                $("#cities").empty();
+            }
+
+
+        }
+
+    </script>
+
 
   @endsection

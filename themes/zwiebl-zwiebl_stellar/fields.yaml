@@ -132,7 +132,7 @@ tabs:
       label: Main BG Color From Top
       type: colorpicker
       availableColors: ["#a89cc8","#7fd2cc", "#c1a748","#79b0e8","#d8d27a", "#e39839", "#000000","#ffffff"]
-      default: "#a89cc8"
+      default: "#57ec70"
       assetVar: "zw-bg-color-bg-one"
 
     zw-bg-color-bg-two:
@@ -140,7 +140,7 @@ tabs:
       label: Main BG Color To Bottom
       type: colorpicker
       availableColors: ["#5f4d93","#728c44","#c1a748","#79b0e8","#d8d27a", "#e39839", "#000000","#ffffff"]
-      default: "#5f4d93"
+      default: "#007d2b"
       assetVar: "zw-bg-color-bg-two"
 
     zw-bg-color-buttons:

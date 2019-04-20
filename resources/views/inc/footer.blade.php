@@ -1,6 +1,6 @@
 <footer id="footer">
     <section>
-        <span class="image"><img src="http://ctcaesguia.test/img/etiqueta_rodape2.png" alt="image" /></span>
+        <span class="image"><img src="img/etiqueta_rodape2.png" alt="image" /></span>
         <p>Instituto Federal de Educação, Ciência e Tecnologia Catarinense - Campus Camboriú</p>
 
         <ul class="actions">

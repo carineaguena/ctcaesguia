@@ -8,17 +8,18 @@
     <meta name="author" content="Carine Aguena">
     <title>Centro de Treinamento Cães-Guia - Centro de Treinamento Cães-Guia</title>
     <link rel="canonical" href="ctcaesguia.test" />
-    <link rel="icon" type="image/png" href="http://ctcaesguia.test/themes/zwiebl-zwiebl_stellar/assets/img/icon.png" />
+    <link rel="icon" type="image/png" href="themes/zwiebl-zwiebl_stellar/assets/img/icon.png" />
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Raleway:300,300i,400,400i,700,700i" rel="stylesheet">
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Raleway:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-    <!--[if lte IE 8]><script src="http://ctcaesguia.test/themes/zwiebl-zwiebl_stellar/assets/js/ie/html5shiv.js"></script><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="http://ctcaesguia.test/combine/b8ebb917aadf4a916520a0e60cd3066d-1553607351" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="http://ctcaesguia.test/combine/4dcb19fba97dac69adadd1d4ac3ee6b2-1553607351" /><![endif]-->
+
+    <!--[if lte IE 8]><script src="../themes/zwiebl-zwiebl_stellar/assets/js/ie/html5shiv.js"></script><![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="../themes/zwiebl-zwiebl_stellar/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../themes/zwiebl-zwiebl_stellar/assets/sass/zw_custom.scss">
 
 	  <link rel="stylesheet" type="text/css" href="/css/app.css">
-    <link href="http://ctcaesguia.test/combine/d0d38fd5fc337205d5c6b70dcfbe3804-1553607351" rel="stylesheet">
     </head>
 
 
@@ -29,7 +30,7 @@
         @if(Request::is('/'))
           <nav id="nav">
               <ul>
-                  <li><a href="http://ctcaesguia.test">Home</a></li>
+                  <li><a href="home">Home</a></li>
                   <li><a href="#one">O CT Cães-Guia</a></li>
                   <li><a href="#two">Curso de Treinador e Instrutor de Cães-Guia</a></li>
                   <li><a href="#three">Famílias Socializadoras</a></li>
@@ -52,7 +53,14 @@
       </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="http://ctcaesguia.test/combine/1c38b58a2682b14029a635b525e1918c-1553607351"></script>
+<script src="combine/1c38b58a2682b14029a635b525e1918c-1553607351"></script>
+  <script src="../themes/assets/js/jquery.min.js"></script>
+  <script src="../themes/assets/js/jquery.scrollex.min.js"></script>
+  <script src="../themes/assets/js/jquery.scrolly.min.js"></script>
+  <script src="../themes/assets/js/assets/js/skel.min.js"></script>
+  <script src="../themes/assets/js/assets/js/util.js"></script>
+  <script src="../themes/assets/js/assets/js/main.js"></script>
+  <script src="../themes/assets/js/assets/js/cidades.js"></script>
 
 </body>
 </html>

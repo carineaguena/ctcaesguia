@@ -7,6 +7,7 @@ use App\Message;
 use App\Register;
 use App\State;
 use App\City;
+use Illuminate\Support\Facades\DB;
 
 class MessagesController extends Controller
 {
@@ -69,21 +70,35 @@ class MessagesController extends Controller
   }
 
   public function getState(Request $request){
-    $estados = State::pluck('name', 'id');
-    $cidades = City::pluck('name', 'state_id');
+    $estados = DB::table('states')
+        ->orderBy('name','asc')
+        ->get();
+    //$cidades = City::pluck('name', 'state_id');
     //$selectValue = $request->get('estado');
-    $cidades = City::where('state_id', $request)->pluck('name', 'id');
+    $cidades = City::all();
 
     return view('familias', compact('estados', 'cidades'));
   }
 
-  public function getCidades(Request $request){
-    //$estado = $this->stateModel->findOrFail(13);
-  //  $cidades = $estado->cidades()->getQuery()->get(['id', 'cidade']);
-    //return Response::json($cidades);
-    //$cidades = Cities::pluck('name', 'state_id');
-    $cidades = City::where('state_id', $request)->pluck('name', 'id');
-    return view('familias', compact('cidades'));
-  }
+    public function getCidades()
+    {
+        $ufs = Request::get('id');
+
+        $cidades = DB::table('cities')
+            ->whereIn('id', $ufs)
+            ->get();
+
+        return Response::json($cidades);
+    }
+
+    public function getCityList(Request $request)
+    {
+        $cities = DB::table("cities")
+            ->where("state_id",$request->state_id)
+            ->lists("name","id");
+
+        return response()->json($cities);
+    }
+
 
 }
