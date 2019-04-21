@@ -1,14 +1,14 @@
 /* Config from Backend */
 body {
-  background-color: $zw-bg-color-bg-one;
-  background-image: url(../themes/zwiebl_stellar/assets/css/images/overlay.png), -moz-linear-gradient(45deg, $zw-bg-color-bg-two 15%, $zw-bg-color-bg-one 85%);
-  background-image: url(../themes/zwiebl_stellar/assets/css/images/overlay.png), -webkit-linear-gradient(45deg, $zw-bg-color-bg-two 15%, $zw-bg-color-bg-one 85%);
-  background-image: url(../themes/zwiebl_stellar/assets/css/images/overlay.png), -ms-linear-gradient(45deg, $zw-bg-color-bg-two 15%, $zw-bg-color-bg-one 85%);
-  background-image: url(../themes/zwiebl_stellar/assets/css/images/overlay.png), linear-gradient(45deg, $zw-bg-color-bg-two 15%, $zw-bg-color-bg-one 85%);
+  background-color: #007d2b;
+  background-image: url(../themes/zwiebl_stellar/assets/css/images/overlay.png), -moz-linear-gradient(45deg, #007d2b 15%, #57ec70 85%);
+  background-image: url(../themes/zwiebl_stellar/assets/css/images/overlay.png), -webkit-linear-gradient(45deg, #007d2b 15%, #57ec70 85%);
+  background-image: url(../themes/zwiebl_stellar/assets/css/images/overlay.png), -ms-linear-gradient(45deg, #007d2b 15%, #57ec70 85%);
+  background-image: url(../themes/zwiebl_clearstellar/assets/css/images/overlay.png), linear-gradient(45deg, #007d2b 15%, #57ec70 85%);
 }
 
 .button.special {
-  background-color: $zw-button-bg !important;
+  background-color: #8cc9f0 !important;
 }
 
 /* Responsive */
