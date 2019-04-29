@@ -8,7 +8,7 @@
     <meta name="author" content="Carine Aguena">
     <title>Centro de Treinamento Cães-Guia - Centro de Treinamento Cães-Guia</title>
     <link rel="canonical" href="ctcaesguia.test" />
-    <link rel="icon" type="image/png" href="../themes/zwiebl-zwiebl_stellar/assets/img/icon.png" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Raleway:300,300i,400,400i,700,700i" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -20,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="../themes/zwiebl-zwiebl_stellar/assets/sass/zw_custom.scss">
 
 
-	  <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
 
 

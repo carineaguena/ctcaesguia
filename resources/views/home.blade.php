@@ -38,6 +38,7 @@
       <p>Caso você tenha interesse em ser uma família socializadora ou receber um cão-guia, veja mais no link abaixo, ou envie um e-mail para: ctcaesguia.camboriu@ifc.edu.br</p>
   </header>
 
+    <p> <video src="/videos/Apresentacao-final-cao-guia.mp4" autobuffer autoloop loop controls ></video></p>
   <ul class="actions">
       <li><a href="familias" class="button">Veja mais</a></li>
   </ul>
