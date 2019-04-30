@@ -22,7 +22,9 @@
 
     <link rel="stylesheet" type="text/css" href="/css/app.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    </head>
+
+
+</head>
 
 
 
@@ -30,16 +32,29 @@
   <div id="wrapper">
         @include('inc.header')
         @if(Request::is('/'))
-          <nav id="nav">
+
+
+      <nav id="nav">
+
+
+
               <ul>
                   <li><a href="home">Home</a></li>
                   <li><a href="#one">O CT Cães-Guia</a></li>
                   <li><a href="#two">Curso de Treinador e Instrutor de Cães-Guia</a></li>
                   <li><a href="#three">Famílias Socializadoras</a></li>
                   <li><a href="#four">Contato</a></li>
+
               </ul>
-          </nav>
-          @else
+
+
+      </nav>
+
+
+
+
+
+      @else
             @include('inc.navigation')
           @endif
 
@@ -52,7 +67,7 @@
 
         @include('inc.footer')
 
-      </div>
+  </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="combine/1c38b58a2682b14029a635b525e1918c-1553607351"></script>
@@ -63,6 +78,8 @@
   <script src="../themes/assets/js/assets/js/util.js"></script>
   <script src="../themes/assets/js/assets/js/main.js"></script>
   <script src="../themes/assets/js/assets/js/cidades.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

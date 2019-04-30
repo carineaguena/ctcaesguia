@@ -3345,11 +3345,12 @@
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: none;
+                float: none;
+                width: 100%;
 			}
 
 				#nav + #main {
-					padding-top: 0;
+					padding-top: 150px;
 				}
 
 		}
